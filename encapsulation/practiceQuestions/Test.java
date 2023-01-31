@@ -60,5 +60,44 @@ public class Test {
     bankAccount1.withdraw(amount);
     System.out.println("New balance afte withdraw : " + bankAccount1.getBalance());
 
+    System.out.println();
+
+    // for online shopping cart class
+   //  ShoppingCart cart = new ShoppingCart("Sanjiv");
+    
+   //  cart.addCart("Jacket", 1);
+   //  System.out.println(cart.getShoppingHistory());
+   //  cart.addCart("Pant",2);
+   //  System.out.println(cart.getShoppingHistory());
+
+   //  cart.reomveCart("Jacket", 1);
+   //  System.out.println(cart.getShoppingHistory());
+
+   //  cart.reomveCart("T-shirt", 1);
+   //  System.out.println(cart.getShoppingHistory());
+
+   //  cart.reomveCart("Pant", 3);
+   //  System.out.println(cart.getShoppingHistory());
+
+
+    System.out.println();
+    // modified and improved Shopping cart class
+    ShoppingCart user1 = new ShoppingCart("Shrestha");
+    user1.addCart("Jacket", 1, 20);
+    System.out.println(user1.getShoppingHistory());
+    user1.addCart("Pant",2, 15);
+    System.out.println(user1.getShoppingHistory());
+
+    user1.removeCart("Jacket", 2, 20);
+    System.out.println(user1.getShoppingHistory());
+
+    user1.removeCart("T-shirt", 1, 10);
+    System.out.println(user1.getShoppingHistory());
+
+    user1.removeCart("Pant", 3, 15);
+    System.out.println(user1.getShoppingHistory());
+
+    user1.viewCart();
+
    }
 }
